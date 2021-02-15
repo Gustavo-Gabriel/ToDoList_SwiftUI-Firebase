@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F104A68825DB1030009268F9 /* TaskCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F104A68725DB1030009268F9 /* TaskCellViewModel.swift */; };
+		F104A68D25DB14B8009268F9 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F104A68C25DB14B8009268F9 /* TaskListViewModel.swift */; };
 		F15CFDF625DA00AA00F563AA /* ToDoList_SwiftUI_FirebaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CFDF525DA00AA00F563AA /* ToDoList_SwiftUI_FirebaseApp.swift */; };
 		F15CFDF825DA00AA00F563AA /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CFDF725DA00AA00F563AA /* TaskListView.swift */; };
 		F15CFDFA25DA00AC00F563AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F15CFDF925DA00AC00F563AA /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F104A68725DB1030009268F9 /* TaskCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellViewModel.swift; sourceTree = "<group>"; };
+		F104A68C25DB14B8009268F9 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
 		F15CFDF225DA00AA00F563AA /* ToDoList_SwiftUI+Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ToDoList_SwiftUI+Firebase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15CFDF525DA00AA00F563AA /* ToDoList_SwiftUI_FirebaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList_SwiftUI_FirebaseApp.swift; sourceTree = "<group>"; };
 		F15CFDF725DA00AA00F563AA /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
@@ -76,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F104A68625DB1017009268F9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F104A68725DB1030009268F9 /* TaskCellViewModel.swift */,
+				F104A68C25DB14B8009268F9 /* TaskListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		F15CFDE925DA00AA00F563AA = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +112,7 @@
 		F15CFDF425DA00AA00F563AA /* ToDoList_SwiftUI+Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				F104A68625DB1017009268F9 /* ViewModel */,
 				F15CFE2F25DA02C200F563AA /* App */,
 				F15CFE2325DA016F00F563AA /* Model */,
 				F15CFE3325DA02D100F563AA /* View */,
@@ -293,6 +307,8 @@
 				F15CFDF825DA00AA00F563AA /* TaskListView.swift in Sources */,
 				F15CFDF625DA00AA00F563AA /* ToDoList_SwiftUI_FirebaseApp.swift in Sources */,
 				F1EC222525DAA3DC00D55707 /* TaskCellView.swift in Sources */,
+				F104A68825DB1030009268F9 /* TaskCellViewModel.swift in Sources */,
+				F104A68D25DB14B8009268F9 /* TaskListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
