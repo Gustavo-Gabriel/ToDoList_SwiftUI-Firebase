@@ -11,7 +11,7 @@ import SwiftUI
 struct ToDoList_SwiftUI_FirebaseApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TaskListView()
         }
     }
 }

@@ -8,11 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		F15CFDF625DA00AA00F563AA /* ToDoList_SwiftUI_FirebaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CFDF525DA00AA00F563AA /* ToDoList_SwiftUI_FirebaseApp.swift */; };
-		F15CFDF825DA00AA00F563AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CFDF725DA00AA00F563AA /* ContentView.swift */; };
+		F15CFDF825DA00AA00F563AA /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CFDF725DA00AA00F563AA /* TaskListView.swift */; };
 		F15CFDFA25DA00AC00F563AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F15CFDF925DA00AC00F563AA /* Assets.xcassets */; };
 		F15CFDFD25DA00AC00F563AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F15CFDFC25DA00AC00F563AA /* Preview Assets.xcassets */; };
 		F15CFE0825DA00AC00F563AA /* ToDoList_SwiftUI_FirebaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CFE0725DA00AC00F563AA /* ToDoList_SwiftUI_FirebaseTests.swift */; };
 		F15CFE1325DA00AC00F563AA /* ToDoList_SwiftUI_FirebaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CFE1225DA00AC00F563AA /* ToDoList_SwiftUI_FirebaseUITests.swift */; };
+		F15CFE2525DA017B00F563AA /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15CFE2425DA017B00F563AA /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,7 @@
 /* Begin PBXFileReference section */
 		F15CFDF225DA00AA00F563AA /* ToDoList_SwiftUI+Firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ToDoList_SwiftUI+Firebase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15CFDF525DA00AA00F563AA /* ToDoList_SwiftUI_FirebaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList_SwiftUI_FirebaseApp.swift; sourceTree = "<group>"; };
-		F15CFDF725DA00AA00F563AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F15CFDF725DA00AA00F563AA /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
 		F15CFDF925DA00AC00F563AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F15CFDFC25DA00AC00F563AA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F15CFDFE25DA00AC00F563AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +46,7 @@
 		F15CFE0E25DA00AC00F563AA /* ToDoList_SwiftUI+FirebaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ToDoList_SwiftUI+FirebaseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F15CFE1225DA00AC00F563AA /* ToDoList_SwiftUI_FirebaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoList_SwiftUI_FirebaseUITests.swift; sourceTree = "<group>"; };
 		F15CFE1425DA00AC00F563AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F15CFE2425DA017B00F563AA /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +97,9 @@
 		F15CFDF425DA00AA00F563AA /* ToDoList_SwiftUI+Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				F15CFDF525DA00AA00F563AA /* ToDoList_SwiftUI_FirebaseApp.swift */,
-				F15CFDF725DA00AA00F563AA /* ContentView.swift */,
+				F15CFE2F25DA02C200F563AA /* App */,
+				F15CFE2325DA016F00F563AA /* Model */,
+				F15CFE3325DA02D100F563AA /* View */,
 				F15CFDF925DA00AC00F563AA /* Assets.xcassets */,
 				F15CFDFE25DA00AC00F563AA /* Info.plist */,
 				F15CFDFB25DA00AC00F563AA /* Preview Content */,
@@ -128,6 +131,30 @@
 				F15CFE1425DA00AC00F563AA /* Info.plist */,
 			);
 			path = "ToDoList_SwiftUI+FirebaseUITests";
+			sourceTree = "<group>";
+		};
+		F15CFE2325DA016F00F563AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F15CFE2425DA017B00F563AA /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F15CFE2F25DA02C200F563AA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F15CFDF525DA00AA00F563AA /* ToDoList_SwiftUI_FirebaseApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F15CFE3325DA02D100F563AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F15CFDF725DA00AA00F563AA /* TaskListView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F15CFDF825DA00AA00F563AA /* ContentView.swift in Sources */,
+				F15CFE2525DA017B00F563AA /* Task.swift in Sources */,
+				F15CFDF825DA00AA00F563AA /* TaskListView.swift in Sources */,
 				F15CFDF625DA00AA00F563AA /* ToDoList_SwiftUI_FirebaseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
