@@ -9,21 +9,21 @@ import SwiftUI
 
 struct TaskCellView: View {
     
-    let task: Task
+    @ObservedObject var taskCellVM: TaskCellViewModel
     
     var body: some View {
         HStack{
-            Image(systemName: task.completed ? "checkmark.circle.fill" : "circle")
+            Image(systemName: taskCellVM.task.completed ? "checkmark.circle.fill" : "circle")
                 .resizable()
                 .frame(width: 20, height: 20)
             
-            Text(task.title)
+            Text(taskCellVM.task.title)
         }
     }
 }
 
 struct TaskCellView_Previews: PreviewProvider {
     static var previews: some View {
-        TaskCellView(task: testDataTasks[0])
+        TaskCellView(taskCellVM: TaskCellViewModel.init(task: testDataTasks[0]))
     }
 }

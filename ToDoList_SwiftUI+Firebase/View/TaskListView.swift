@@ -9,15 +9,15 @@ import SwiftUI
 
 struct TaskListView: View {
     
-    let tasks = testDataTasks
+    @ObservedObject var taskListVM = TaskListViewModel()
     
     var body: some View {
         
         NavigationView{
             VStack(alignment: .leading) {
                 
-                List(tasks) { task in
-                    TaskCellView(task: task)
+                List(taskListVM.taskCellViewModels) { taskCellVM in
+                    TaskCellView(taskCellVM: taskCellVM)
                 }
                 
                 Button(action: {}) {
