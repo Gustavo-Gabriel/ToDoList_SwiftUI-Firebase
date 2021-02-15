@@ -9,5 +9,15 @@ import Foundation
 import Combine
 
 class TaskListViewModel: ObservableObject {
-    <#code#>
+    
+    @Published var taskCellViewModels = [TaskCellViewModel]()
+    
+    private var cancellables = Set<AnyCancellable>()
+    
+    init() {
+        self.taskCellViewModels = testDataTasks.map{ task in
+            TaskCellViewModel(task: task)
+        }
+    }
+    
 }
