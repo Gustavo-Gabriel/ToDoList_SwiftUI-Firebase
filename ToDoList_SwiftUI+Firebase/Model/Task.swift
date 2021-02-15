@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Task {
+struct Task: Identifiable {
+    var id: String = UUID().uuidString
     var title: String
     var completed: Bool
 }
@@ -17,7 +18,7 @@ struct Task {
 let testDataTasks = [
     Task(title: "Implement the UI", completed: true),
     Task(title: "Connect to Firebase", completed: false),
-    Task(title: "????", completed: false),
+    Task(title: "????", completed: true),
     Task(title: "Profit!", completed: false)
 ]
 

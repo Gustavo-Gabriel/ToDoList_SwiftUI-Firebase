@@ -8,16 +8,16 @@
 import SwiftUI
 
 struct TaskListView: View {
+    
+    let tasks = testDataTasks
+    
     var body: some View {
         
         NavigationView{
             VStack(alignment: .leading) {
-                List(0 ..< 5) { item in
-                    Image(systemName: "circle")
-                        .resizable()
-                        .frame(width: 20, height: 20)
-                    
-                    Text("Implement the UI")
+                
+                List(tasks) { task in
+                    TaskCellView(task: task)
                 }
                 
                 Button(action: {}) {
@@ -33,6 +33,7 @@ struct TaskListView: View {
                 .navigationBarTitle("Tasks")
             }
         }
+        
     }
 }
 
